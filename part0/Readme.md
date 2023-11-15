@@ -1,4 +1,4 @@
-#FullStack Challenge
+
 
 ```mermaid
 sequenceDiagram
