@@ -19,7 +19,7 @@ sequenceDiagram
     server-->>browser: the JavaScript file
     deactivate server
 
-    Note right of browser: The browser starts executing the JavaScript code that fetches the JSON from the server and an event is created waiting for the submit button on the form to be pressed
+    Note right of browser: The browser executes the JS code that fetches the JSON from the server and an event is created waiting for the submit button to be pressed
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate server
@@ -35,5 +35,5 @@ sequenceDiagram
     server-->>browser: Code 201 (meaning that the contents of the new note have been successfully received and added)
     deactivate server
 
-    Note right of browser: The code written in the JS file allowed a new note to be created upon hitting submit, which would do 2 things, A. Rerender the page with the new note and B. Send the note to the server to be added.
+    Note right of browser: The code in JS file allowed a new note to be created upon hitting submit, which Rerendered the page and Sent the note to the server to be added.
 ```
